@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.street{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('street.jpg');
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+.car {
+    height: 85px;
+    width: 268px;
+    display: block;
+    background-image: url('car.png');
+    position: absolute;
+    top: 665px;
+    animation: car 7s ease;
+    z-index: 1;
+}
+.wheel1 {
+    height: 40px;
+    width: 43px;
+    display: block;
+    background-image: url('wheel.png');
+    position: absolute;
+    top: 707px;
+    left: 35px;
+    animation: wheel1 7s ease;
+    z-index: 2;
+}
+.wheel2 {
+    height: 40px;
+    width: 43px;
+    display: block;
+    background-image: url('wheel.png');
+    position: absolute;
+    top: 707px;
+    left: 205px;
+    animation: wheel2 7s ease;
+    z-index: 3;
+}
+.light {
+    display: block;
+    position: absolute;
+    background-image: url('light.png');
+    left: 270px;
+    top: 640px;
+    width: 103px;
+    height: 107px;
+    z-index: 2;
+    animation: light 7s ease;
+}
+
+@keyframes car {
+    100%{
+        transform: translateX(170vh);
+    }
+    
+}
+@keyframes wheel1 {
+    100%{
+        transform: translateX(170vh) rotate(1800deg);
+       
+    }
+    
+}
+
+@keyframes wheel2 {
+    100%{
+        transform: translateX(170vh) rotate(1800deg);
+    }
+    
+}
+@keyframes light {
+    0% {
+        opacity: 0;
+        
+    }
+    10% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(170vh);
+    }
+
+}
